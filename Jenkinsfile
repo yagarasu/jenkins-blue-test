@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Test') {
       steps {
-        sh 'CI=true yarn test --env=node'
+        sh 'CI=true yarn test'
       }
     }
     stage('Build') {
